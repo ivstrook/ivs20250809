@@ -1,9 +1,9 @@
-############################
+###########################
 ## CHANGE THESE
 ############################
 
-baseURL: "https://ivstrook.github.io/ivs20250809"
-title: ivs20250809
+baseURL: "https://ivstrook.tech"
+title: ivstrook homepage
 
 ############################
 ## MISC
@@ -11,5 +11,5 @@ title: ivs20250809
 
 enableEmoji: true
 disableKinds: ["taxonomy", "term"]
-languageCode: "en-us"
+languageCode: "ja-jp"
 enableRobotsTXT: true

@@ -3,10 +3,12 @@
 type: misc
 
 # change these
-jobTitle: Blogger
-name: ivstrook
+jobTitle: Personal Student
+name: フェゼレント（ivstrook）
 bio: true
-icon: ":coffee:"
+icon: ":turtle:"
 ---
 
-Add your Bio here!:+1:
+2020/04 Ubuntuを使い始める、そこからLinuxへ。
+
+2025/08/05 シアスタ開始
