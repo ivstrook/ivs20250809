@@ -1,7 +1,7 @@
 ---
 title: 構築しました
 subtitle: "Hugo&Qubt"
-summary: 
+summary: 構築内容メモ、記事投稿テスト。
 date: 2025-08-09
 cardimage: photo1_card.png
 featureimage: photo1.png
