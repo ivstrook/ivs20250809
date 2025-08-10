@@ -3,8 +3,8 @@ title: noteに書くほどでもないこと
 subtitle: "要は雑記 "
 summary: 特に考えず書いてみる
 date: 2025-08-10
-cardimage: photo1_card.png
-featureimage: photo1.png
+cardimage: cutroom_card.png
+featureimage: cutroom.png
 caption: Image caption
 authors:
   - ivstrook: author.jpeg
