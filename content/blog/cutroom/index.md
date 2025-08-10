@@ -1,13 +1,13 @@
----  
-title: noteに書くほどでもないこと  
-subtitle: "要は **雑記** "  
-summary: 特に考えず書いてみる  
-date: 2025-08-10  
-cardimage: photo1\_card.png  
-featureimage: photo1.png  
-caption: サムネイル  
-authors:  
-  - ivstrook: author.jpeg 
+---
+title: noteに書くほどでもないこと
+subtitle: "要は **雑記**"
+summary: 
+date: 2025-08-10
+cardimage: photo1_card.png
+featureimage: photo1.png
+caption: Image caption
+authors:
+  - ivstrook: author.jpeg
 ---
 
 ## どうも
