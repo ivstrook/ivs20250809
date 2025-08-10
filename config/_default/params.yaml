@@ -5,7 +5,7 @@
 author:
   name: フェゼレント（ivstrook）
   image: author.png
-  greeting: "Welcome to My Homepages "
+  greeting: "2025/8/10 記事を公開しました"
   icon: ":turtle:"
 
 ############################
@@ -22,17 +22,6 @@ links:
   - soundcloud: https://soundcloud.com/underground-re-store
   - bluesky:  https://bsky.app/profile/ivstrook.bsky.social
   - spotify: https://open.spotify.com/user/pbvovtf7ifvzhm4hxfdo26l2v?si=105ee119cbe144b5
-
-###############################
-## News        
-###############################
-
-news:
- - publish-day: 2025/08/10
- - title: noteに書くほどでもないこと
- - subtitle: "要は雑記 "
- - summary: 特に考えず書いてみる
- 
 ###############################
 ## OpenGraph & Twitter Cards ##
 ###############################
