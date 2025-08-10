@@ -3,8 +3,8 @@ title: 構築しました
 subtitle: "Hugo&Qubt"
 summary: 
 date: 2025-08-09
-cardimage: photo1_card.jpeg
-featureimage: photo1.jpeg
+cardimage: photo1_card.png
+featureimage: photo1.png
 caption: Image caption
 authors:
   - ivstrook: author.jpeg
