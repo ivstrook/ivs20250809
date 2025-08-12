@@ -4,7 +4,7 @@ subtitle: "久々にゲームしたくなったので"
 summary: 発見してから、購入し遊ぶまで。
 date: 2025-08-12
 cardimage: ps4.png
-featureimage: ps4.png
+featureimage: ps4_card.png
 caption: 買いました、PS4。
 authors:
   - ivstrook: author.jpeg
