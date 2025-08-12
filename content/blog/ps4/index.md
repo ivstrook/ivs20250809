@@ -3,7 +3,7 @@ title: PS4を買う（買った）はなし
 subtitle: "久々にゲームしたくなったので"
 summary: 発見してから、購入し遊ぶまで。
 date: 2025-08-12
-cardimage: ps4_card.png
+cardimage: ps4.png
 featureimage: ps4.png
 caption: 買いました、PS4。
 authors:
