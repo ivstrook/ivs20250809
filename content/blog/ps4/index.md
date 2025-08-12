@@ -8,7 +8,7 @@ featureimage: ps4_card.png
 caption: 買いました、PS4。
 authors:
   - ivstrook: author.jpeg
-—--
+---
 ## どうも
 
 暇になった時間を埋めるのと、会話のネタ探しでPS4を買いました。
