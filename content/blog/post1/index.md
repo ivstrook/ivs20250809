@@ -13,4 +13,6 @@ authors:
 上記の仕様のもと構築しました
 
 リポジトリ名は構築日にしました、そこからどう変化するのかワクワクしながら見てみてください。
-[リポジトリ](https://github.com/ivstrook/ivs20250809)
+[リポジトリ]
+
+(https://github.com/ivstrook/ivs20250809)
