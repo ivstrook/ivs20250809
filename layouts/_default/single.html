@@ -2,9 +2,10 @@
   {{ $featureimage := resources.GetMatch (print "**" .Params.featureimage) }}
   {{ $featuredcaption := .Params.caption }}
   {{ $date := .Date | time.Format ":date_medium" }}
-  {{ $DPT := printf "%s - %d minute read" $date .ReadingTime }}
+{{ $DPT := printf "%s - %d minute read" $date (math.Round (div (float .WordCount) (float $.Site.Params.minute_read_speed))) }}
   {{ $toc := .Params.toc | default false }}
-<head><script src="https://cdn.jsdelivr.net/npm/@konemono/nostr-share-component@0.4.1/dist/nostr-share-component.min.js"></script></head>
+<head></head>
+
 
   <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-md) px-4">
     <article>
@@ -17,16 +18,7 @@
       <div class="mb-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
         {{ $DPT }}
       </div>
-<div class="share-buttons">
-  <p>この記事をシェアする</p>
-  
-  <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener" aria-label="Share on X">
-    <img src="/images/icons/x.svg" alt="X icon" width="32" height="32">
-  </a>
-<nostr-share data-type="icon" icon-size="32" data-text="{{ .Title }}
-{{ .Permalink }}"></nostr-share>
 
-</div>
       {{ with $featureimage }}
         {{ $featureimage = $featureimage.Filter (images.Process "resize 736x Lanczos q100 webp" ) }}
         <div class="flex flex-col">
@@ -39,7 +31,7 @@
         </div>
       {{ end }}
 
-</div>
+      
       {{ if $toc }}
         <aside class="mb-8 mt-4 flex flex-col">
           <h2 class="mb-2 text-2xl text-slate-500 dark:text-slate-400">Table of Content</h2>
