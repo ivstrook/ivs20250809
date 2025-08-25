@@ -6,6 +6,7 @@ author:
   image: author.png
   greeting: "Chill out,Always."
   icon: ":palm_tree:"
+  info: 「新しい記事」が更新されました、ぜひご覧ください。
   
 ############################
 ## Links
@@ -28,3 +29,4 @@ title: ivstrook Homepage
 description: "Site build with Qubt & Hugo"
 images:
   - thumbnail.png
+  

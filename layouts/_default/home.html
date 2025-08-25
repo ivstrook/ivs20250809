@@ -17,7 +17,6 @@
         </div>
       {{ end }}
 
-
       <h1 class="text-center text-4xl font-extrabold text-slate-700 dark:text-slate-200">
         {{ $name | markdownify | emojify }}
       </h1>
@@ -27,6 +26,13 @@
           {{ . | markdownify | emojify }}
         </h2>
       {{ end }}
+
+      {{ with .Site.Params.Author.info }}
+        <h2 class="mt-4 text-center text-xl text-slate-600 dark:text-slate-400">
+          {{ . | markdownify | emojify }}
+        </h2>
+      {{ end }}
+      
       <div class="mt-4 flex flex-wrap items-center justify-center">
         {{ range $links := .Site.Params.Links }}
           {{ range $type, $data := $links }}
