@@ -18,6 +18,14 @@
       <div class="mb-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
         {{ $date }} - {{ $minutes }} minute read
       </div>
+{{ range .Params.tags }}
+  {{ $tag := . }}
+  {{ with $.Site.Data.tags }}
+    <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" class="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 dark:bg-gray-700 dark:text-gray-300">
+      #{{ index . $tag | default $tag }}
+    </a>
+  {{ end }}
+{{ end }}
 
       {{ with $featureimage }}
         {{ $featureimage = $featureimage.Filter (images.Process "resize 736x Lanczos q100 webp" ) }}

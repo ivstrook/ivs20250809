@@ -6,6 +6,7 @@ date: 2025-08-10
 cardimage: photo1_card.png
 featureimage: photo1.png
 caption: Image caption
+tags: ["other"]
 authors:
   - ivstrook: author.jpeg
 ---
