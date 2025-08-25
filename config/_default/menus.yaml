@@ -3,6 +3,9 @@
 ############################
 
 main:
+- name: 新しい記事
+  url: /blog/xperia/
+  weight: 5
 - name: Home
   url: /
   weight: 10
