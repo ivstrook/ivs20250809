@@ -2,6 +2,9 @@
   <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-md) px-4">
     <div class="mt-8">
       <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}
+        <h2>{{ . }}</h2>
+      {{ end }}
       <div class="mt-2 text-sm text-slate-500 dark:text-slate-400">
         {{ .Date | time.Format ":date_medium" }}
       </div>
@@ -12,8 +15,7 @@
           <img src="{{ $image.RelPermalink }}" alt="Card image for this page" />
         {{ end }}
       {{ end }}
-
-
+      
       <article class="mt-4 prose dark:prose-invert">
         {{ .Content }}
       </article>
