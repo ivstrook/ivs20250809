@@ -21,20 +21,10 @@
   <p>この記事をシェアする</p>
   
   <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener" aria-label="Share on X">
-    <img src="/images/icons/x.svg" alt="X icon" width="24" height="24">
+    <img src="/static/images/icons/x.svg" alt="X icon" width="24" height="24">
   </a>
-  
-  <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener" aria-label="Share on Facebook">
-    <img src="/images/icons/facebook.svg" alt="Facebook icon" width="24" height="24">
-  </a>
-  
-  <a href="https://getpocket.com/save?url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener" aria-label="Save to Pocket">
-    <img src="/images/icons/pocket.svg" alt="Pocket icon" width="24" height="24">
-  </a>
-  
-  <a href="https://social-plugins.line.me/lineit/share?url={{ .Permalink }}" target="_blank" rel="noopener" aria-label="Share on Line">
-    <img src="/images/icons/line.svg" alt="Line icon" width="24" height="24">
-  </a>
+
+
 </div>
       {{ with $featureimage }}
         {{ $featureimage = $featureimage.Filter (images.Process "resize 736x Lanczos q100 webp" ) }}
