@@ -9,7 +9,7 @@ caption: Image caption
 authors:
   - ivstrook: author.jpeg
 toc: true
-tags: ["other"]
+categories: ["misc"]
 ---
 
 ## どうも

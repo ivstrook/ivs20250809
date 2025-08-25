@@ -6,7 +6,7 @@ date: 2025-08-12
 cardimage: ps4.png
 featureimage: ps4_card.png
 caption: 買いました、PS4。
-tags: ["tech", "game"]
+categories: ["tech", "game"]
 authors:
   - ivstrook: author.jpeg
 ---
