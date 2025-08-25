@@ -12,6 +12,9 @@ main:
 - name: Blog
   url: /blog/
   weight: 20
+- name: History
+  url: /history/
+  weight: 25
 - name: About
   url: /about/
   weight: 30
