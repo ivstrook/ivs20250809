@@ -8,6 +8,7 @@ featureimage: photo1.png
 caption: Image caption
 authors:
   - ivstrook: author.jpeg
+toc: true
 ---
 
 ## どうも
