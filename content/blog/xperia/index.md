@@ -6,7 +6,6 @@ date: 2025-08-25
 cardimage: xperia.png
 featureimage: xperia_card.png
 caption: 
-tags: ["tech", "phone"]
 authors:  
   - ivstrook: author.jpeg
 ---
