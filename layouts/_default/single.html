@@ -4,7 +4,7 @@
   {{ $date := .Date | time.Format ":date_medium" }}
   {{ $DPT := printf "%s - %d minute read" $date .ReadingTime }}
   {{ $toc := .Params.toc | default false }}
-
+<head><script src="https://cdn.jsdelivr.net/npm/@konemono/nostr-share-component@0.4.1/dist/nostr-share-component.min.js"></script></head>
 
   <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-md) px-4">
     <article>
@@ -21,9 +21,10 @@
   <p>この記事をシェアする</p>
   
   <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" rel="noopener" aria-label="Share on X">
-    <img src="/images/icons/x.svg" alt="X icon" width="24" height="24">
+    <img src="/images/icons/x.svg" alt="X icon" width="32" height="32">
   </a>
-
+<nostr-share data-type="icon" icon-size="32" data-text="{{ .Title }}
+{{ .Permalink }}"></nostr-share>
 
 </div>
       {{ with $featureimage }}
