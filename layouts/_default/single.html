@@ -2,9 +2,10 @@
   {{ $featureimage := resources.GetMatch (print "**" .Params.featureimage) }}
   {{ $featuredcaption := .Params.caption }}
   {{ $date := .Date | time.Format ":date_medium" }}
-{{ $DPT := printf "%s - %d minute read" $date (math.Round (div (float .WordCount) (float $.Site.Params.minute_read_speed))) }}
   {{ $toc := .Params.toc | default false }}
 
+  {{/* This block calculates reading time based on the custom speed from your config file. */}}
+  {{ $minutes := math.Floor (div (float .WordCount) (float $.Site.Params.minute_read_speed)) }}
 
   <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-md) px-4">
     <article>
@@ -15,7 +16,7 @@
         {{ .Params.subtitle | emojify }}
       </h2>
       <div class="mb-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
-        {{ $DPT }}
+        {{ $date }} - {{ $minutes }} minute read
       </div>
 
       {{ with $featureimage }}
@@ -29,7 +30,6 @@
           {{ end }}
         </div>
       {{ end }}
-
       
       {{ if $toc }}
         <aside class="mb-8 mt-4 flex flex-col">
@@ -62,11 +62,9 @@
         </aside>
       {{ end }}
 
-
-...
-<span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden">
-  {{ .Content }}
-</span>
+      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden">
+        {{ .Content }}
+      </span>
     </article>
   </div>
 {{ end }}

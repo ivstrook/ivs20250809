@@ -1,2 +1,4 @@
 [params]
-  minute_read_speed = 400
+  hasCJKLanguage = true
+  showReadingTime = true
+  minute_read_speed = 350.0 # この値を変更する
