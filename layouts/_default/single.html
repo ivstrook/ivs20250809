@@ -4,7 +4,6 @@
   {{ $date := .Date | time.Format ":date_medium" }}
 {{ $DPT := printf "%s - %d minute read" $date (math.Round (div (float .WordCount) (float $.Site.Params.minute_read_speed))) }}
   {{ $toc := .Params.toc | default false }}
-<head></head>
 
 
   <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-md) px-4">
