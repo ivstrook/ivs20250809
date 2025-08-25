@@ -62,9 +62,23 @@
       {{ end }}
 
 
-      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden">
-        {{ .Content }}
-      </span>
+...
+<span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden">
+  {{ .Content }}
+</span>
+
+<div class="share-buttons mt-8">
+  <p>この記事をシェアする</p>
+  <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}" target="_blank" rel="noopener">
+    Twitterでシェア
+  </a>
+  
+  <a href="https://getpocket.com/edit?url={{ .Permalink }}" target="_blank" rel="noopener">
+    Pocketに保存
+  </a>
+</div>
+
+</article>
     </article>
   </div>
 {{ end }}
