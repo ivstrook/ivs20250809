@@ -1,7 +1,11 @@
+baseURL = "http://ivstrook.tech"
+languageCode = "ja-jp"
+title = "ivstrook homepage"
+
 [params]
   hasCJKLanguage = true
   showReadingTime = true
-  minute_read_speed = 350.0 # この値を変更する
+  minute_read_speed = 350.0
 
 [taxonomies]
   tag = "tags"

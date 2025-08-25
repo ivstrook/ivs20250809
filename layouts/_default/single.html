@@ -1,78 +1,31 @@
 {{ define "main" }}
-  {{ $featureimage := resources.GetMatch (print "**" .Params.featureimage) }}
-  {{ $featuredcaption := .Params.caption }}
-  {{ $date := .Date | time.Format ":date_medium" }}
-  {{ $toc := .Params.toc | default false }}
-
-  {{/* This block calculates reading time based on the custom speed from your config file. */}}
-  {{ $minutes := math.Floor (div (float .WordCount) (float $.Site.Params.minute_read_speed)) }}
-
   <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-md) px-4">
-    <article>
-      <h1 class="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
-        {{ .Title | emojify }}
-      </h1>
-      <h2 class="mt-4 text-2xl text-slate-500 dark:text-slate-400">
-        {{ .Params.subtitle | emojify }}
-      </h2>
-      <div class="mb-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
-        {{ $date }} - {{ $minutes }} minute read
+    <div class="mt-8">
+      <h1>{{ .Title }}</h1>
+      <div class="mt-2 text-sm text-slate-500 dark:text-slate-400">
+        {{ .Date | time.Format ":date_medium" }}
       </div>
-{{ range .Params.tags }}
-  {{ $tag := . }}
-  {{ with $.Site.Data.tags }}
-    <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" class="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700 dark:bg-gray-700 dark:text-gray-300">
-      #{{ index . $tag | default $tag }}
-    </a>
-  {{ end }}
-{{ end }}
-
-      {{ with $featureimage }}
-        {{ $featureimage = $featureimage.Filter (images.Process "resize 736x Lanczos q100 webp" ) }}
-        <div class="flex flex-col">
-          <img class="mt-4 h-full w-full object-cover" src="{{ $featureimage.RelPermalink }}" alt="feature image" height="{{ $featureimage.Height }}" width="{{ $featureimage.Width }}" />
-          {{ with $featuredcaption }}
-            <span class="mb-4 mt-1 text-center text-sm text-slate-700 dark:text-slate-200">
-              {{ $featuredcaption | emojify }}
-            </span>
+      
+      {{ with .Params.cardimage }}
+        {{ $image := resources.Get . }}
+        {{ if $image }}
+          <img src="{{ $image.RelPermalink }}" alt="Card image for this page" />
+        {{ end }}
+      {{ end }}
+      
+      {{ with .Params.tags }}
+        <div class="mt-4 flex flex-wrap gap-2">
+          {{ range . }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="inline-flex items-center rounded-md border-2 border-transparent bg-slate-200 px-2 py-1 text-xs text-black transition-colors duration-200 ease-in-out hover:bg-slate-300 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600">
+              #{{ . }}
+            </a>
           {{ end }}
         </div>
       {{ end }}
-      
-      {{ if $toc }}
-        <aside class="mb-8 mt-4 flex flex-col">
-          <h2 class="mb-2 text-2xl text-slate-500 dark:text-slate-400">Table of Content</h2>
-          <div class="text-lg text-slate-700 underline dark:text-slate-200">
-            <nav>
-              {{- range .Fragments.Headings }}
-                <ul class="list-inside list-[upper-roman]">
-                  {{- range .Headings }}
-                    <li class="hover:text-slate-500 dark:hover:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
-                    {{- if .Headings }}
-                      <ul class="list-inside list-[lower-alpha]">
-                        {{- range .Headings }}
-                          <li class="ml-4 hover:text-slate-500 dark:hover:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
-                          {{- if .Headings }}
-                            <ul class="list-inside list-disc">
-                              {{- range .Headings }}
-                                <li class="ml-8 hover:text-slate-500 dark:hover:text-slate-400"><a href="#{{ anchorize .ID }}">{{ .Title }}</a></li>
-                              {{- end }}
-                            </ul>
-                          {{- end }}
-                        {{- end }}
-                      </ul>
-                    {{- end }}
-                  {{- end }}
-                </ul>
-              {{- end }}
-            </nav>
-          </div>
-        </aside>
-      {{ end }}
 
-      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden">
+      <article class="mt-4 prose dark:prose-invert">
         {{ .Content }}
-      </span>
-    </article>
+      </article>
+    </div>
   </div>
 {{ end }}
