@@ -4,8 +4,8 @@ subtitle: "ずーっとね"
 summary: どうも
          珍しく身内話、というより自分の話をしてみようと思います。
 date: 2025-09-06
-cardimage: post1.png
-featureimage: post1.png
+cardimage: photo1_card.png
+featureimage: photo1.png
 caption: 
 authors:  
   - ivstrook: author.jpeg
