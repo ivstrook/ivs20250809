@@ -1,7 +1,8 @@
 ---
 title: 基本毎日しんどい
 subtitle: "ずーっとね"
-summary: 
+summary: どうも
+         珍しく身内話、というより自分の話をしてみようと思います。
 date: 2025-09-06
 cardimage: post1.png
 featureimage: post1.png
