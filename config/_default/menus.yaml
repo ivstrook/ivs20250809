@@ -4,7 +4,7 @@
 
 main:
 - name: 新しい記事
-  url: /blog/xperia/
+  url: /blog/everyday_sick/
   weight: 5
 - name: Home
   url: /
