@@ -7,17 +7,7 @@ author:
   greeting: "Chill out,Always."
   icon: ":palm_tree:"
   info: ""
-  
-############################
-## Links
-############################
 
-links:
-  - github: https://github.com/ivstrook/ivs20250809
-  - mastodon: https://mstdn.social/@ivstrook
-  - email: mailto:jardsocial@proton.me
-  - discord: https://discordapp.com/users/1138032005762781204
-  - spotify: https://open.spotify.com/user/pbvovtf7ifvzhm4hxfdo26l2v?si=105ee119cbe144b5
 ###############################
 ## OpenGraph & Twitter Cards ##
 ###############################
