@@ -10,7 +10,8 @@ authors:
   - ivstrook: author.jpeg
 ---
 
-### どうも
+**どうも**
+
 来ると思わんやんけ、緑線。
 一応話には聞いてたけども、こんな早いと思わんじゃん。
 
@@ -43,4 +44,5 @@ Xperia 5 IIを希望するも、「高すぎるわ！」となり、「AQUOS zer
 PhotoProで写真を撮る楽しみに気付き、カメラ用として使えないわけではないですが、やっぱり気になる。
 
 ## 以上
-## fezerent / ivstrook
+
+**ivstrook**

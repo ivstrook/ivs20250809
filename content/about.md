@@ -4,7 +4,7 @@ type: misc
 
 # change these
 jobTitle:  Who am I
-name: フェゼレント（ivstrook）
+name: ivstrook
 bio: true
 icon: ":turtle:"
 ---
@@ -13,5 +13,7 @@ icon: ":turtle:"
 - 2025/08/11 アイドルマスター スターリットシーズン 開始
 - 2025/08/20 DEATH STRANDING 開始
 #### 今やってること
-- 捨てられないラジオ -> ニコニコ動画へ
-- [UNDERGROUND]Re:store -> soundcloudへ
+
+特になし、現状維持。
+
+いわば、「いつもどおり」
