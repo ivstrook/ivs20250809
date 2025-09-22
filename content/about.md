@@ -12,6 +12,7 @@ icon: ":turtle:"
 - 2025/08/05 アイドルマスター ミリオンライブ！ シアターデイズ 開始
 - 2025/08/11 アイドルマスター スターリットシーズン 開始
 - 2025/08/20 DEATH STRANDING 開始
-#### 今やってること
+## 今やってること
 
 [Nostrasia2025](https://nostrasia.com) への一部デザイン制作
+[ComKom Technology](https://www.comcomponent.com/)へのカバー画像提供
