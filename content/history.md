@@ -64,7 +64,7 @@ toc: true
  2025年
   - ごまだれ（どぐせぇ庁検閲済み）| ここまで名前
   - カナリアレモングラス
-  - フェゼレント（現在名称）
+  - フェゼレント（諸事情により、現在使用停止。）
   - fezerent（英名）
   - ivstrook（ID）
   - skywordscanbass（Google Play Gamesのみ）
