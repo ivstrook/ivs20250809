@@ -15,4 +15,5 @@ icon: ":turtle:"
 ## 今やってること
 
 [Nostrasia2025](https://nostrasia.com) への一部デザイン制作
+
 [ComKom Technology](https://www.comcomponent.com/)へのカバー画像提供
